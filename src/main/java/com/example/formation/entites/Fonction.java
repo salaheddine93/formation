@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
@@ -15,7 +16,9 @@ public class Fonction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY )
     private Long id;
+    @NotNull(message = "champ obligatoire")
     private String label;
+    @NotNull(message = "champ obligatoire")
     private String profil;
 
     @ManyToMany

@@ -6,11 +6,11 @@ import java.util.List;
 
 public interface PersonService {
 
-    public Person ajouter(Person person);
+   Person ajouter(Person person);
 
-    public List<Person> getAllPerson();
+    List<Person> getAllPerson();
 
-    public Person getPersonById(Long id);
+   Person getPersonById(Long id);
 
-    public void delete(Long id);
+ void delete(Long id);
 }

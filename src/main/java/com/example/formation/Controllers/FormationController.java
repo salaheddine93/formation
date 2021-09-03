@@ -16,7 +16,7 @@ import java.text.Format;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/formation")
+@RequestMapping("/api/formations")
 public class FormationController {
     @Autowired
     FormationService formationService;

@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/validation")
+@RequestMapping("/api/validations")
 public class ValidationController {
     @Autowired
     ValidationService validationService;
